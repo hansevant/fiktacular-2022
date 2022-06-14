@@ -13,9 +13,11 @@ git clone https://github.com/hansevant/bistalk-2022.git
 3. last, setup the connection configuration file in
    ular/config/db-connect.php
 
-note :registration form is manual, you need to hardcode with comment the modal
+note : registration form is still <b>manual</b>, you need to hardcode with comment the modal
+
+---
 
 admin credentials
 
-username : kontenkreator
+username : kontenkreator <br>
 password : ular2022
