@@ -1,0 +1,65 @@
+.preloader{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #ead8a6;
+    z-index: 9999;
+}
+
+.preloader.active{
+    opacity: .01;
+    transform: translateY(-100vh);
+    transition: ease-in-out 1s;
+    transition-delay: .5s;
+}
+
+.preloader::before{
+    display: none;
+    content: 'loading';
+    position: absolute;
+    font-size: 12em;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgba(3, 0, 0, 0.3);
+}
+
+.preloader img{
+    animation-name: ghost;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ghost{
+    50%{
+        opacity: .5;
+    }
+}
+
+
+.counter{
+    display: none;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 16em;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.counter:after{
+    display: none;
+    content: '%';
+    font-size: 0.5em;
+}
+
+.hide{
+    opacity: 1;
+    transition: 1s;
+    pointer-events: none;
+}
