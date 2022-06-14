@@ -5,7 +5,7 @@
 1. clone this repo
 
 ```
-git clone https://github.com/hansevant/bistalk-2022.git
+git clone https://github.com/hansevant/fiktacular-2022.git
 ```
 
 2. import the database file
